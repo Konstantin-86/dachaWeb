@@ -1,0 +1,292 @@
+.innerCalcLogics {
+  position: relative;
+  z-index: 100;
+  padding: 40px;
+  padding-bottom: 0;
+  background-color: rgb(240, 240, 232);
+  border-radius: 24px;
+  color: #38343b;
+  margin-left: 60px;
+  @media (max-width: 1000px) {
+    margin-left: 0;
+    gap: 10px;
+  }
+}
+.logic-inner-items-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  margin-bottom: 54px;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.logicItem {
+  @media (max-width: 610px) {
+    max-width: 260px;
+    width: 100%;
+  }
+}
+.item-number {
+  position: relative;
+  font-size: 32px;
+  font-family: var(--secondFamily);
+  color: #d2d2c3;
+  &::before {
+    content: "0" counter(list-item);
+    position: absolute;
+    width: 14px;
+    height: 8px;
+    left: 0;
+    bottom: 12px;
+    font-family: "Museo", sans-serif;
+    color: purple;
+    font-size: 12px;
+  }
+}
+.logic-item-title {
+  font-weight: 300;
+  font-size: 19px;
+  margin-bottom: 40px;
+  @media (max-width: 610px) {
+    margin-bottom: 20px;
+  }
+}
+.box-item-decor {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  input {
+    display: none;
+  }
+  input:checked + label {
+    border: 2px solid #8f5bd7;
+  }
+  label {
+    width: 69px;
+    border: 2px solid #d7d7c4;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #5a6372;
+    cursor: pointer;
+  }
+  :nth-child(2) {
+    height: 60px;
+  }
+  :nth-child(4) {
+    height: 120px;
+  }
+  :nth-child(6) {
+    height: 192px;
+  }
+}
+.box-item-radioBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  input {
+    display: none;
+  }
+  label {
+    position: relative;
+    padding: 14px 24px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #5a6372;
+    border: 2px solid #d7d7c4;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 240px;
+    cursor: pointer;
+  }
+  input:checked + label {
+    border: 2px solid #8f5bd7;
+  }
+  .rough-finish-info,
+  .Pre-Finishing-info,
+  .fine-finishing-info {
+    position: absolute;
+    padding: 16px 24px;
+    background-color: #afafae;
+    border-radius: 16px;
+    right: -21px;
+    top: -230px;
+    min-width: 384px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    @media (max-width: 610px) {
+      min-width: 320px;
+      max-width: 380px;
+      width: 100%;
+      right: 0;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 14px;
+      top: -210px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 42px;
+      height: 42px;
+      background-color: #afafae;
+      border-radius: 8px;
+      transform: rotate(45deg);
+      bottom: -10px;
+      right: 37px;
+      @media (max-width: 610px) {
+        display: none;
+      }
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+  .Pre-Finishing-info {
+    top: -156px;
+  }
+  .fine-finishing-info {
+    top: -230px;
+  }
+}
+.logic-item-range-box {
+  position: relative;
+  margin-bottom: 32px;
+  .item-range-min,
+  .item-range-max {
+    position: absolute;
+    content: "";
+    font-size: 12px;
+    font-weight: 500;
+    color: #5a6372;
+    bottom: -10px;
+  }
+  .item-range-min {
+    left: 0;
+  }
+  .item-range-max {
+    right: 0;
+  }
+  .item-range-line-decor {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(222, 222, 212);
+    z-index: 1;
+  }
+  input {
+    position: relative;
+    z-index: 100;
+    min-width: 224px;
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    /* creating a custom design */
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    /*  slider progress trick  */
+    overflow: hidden;
+    border-radius: 16px;
+    height: 27px;
+    background: transparent;
+    border-radius: 16px;
+    &::-webkit-slider-thumb {
+      /* removing default appearance */
+      -webkit-appearance: none;
+      appearance: none;
+      /* creating a custom design */
+      height: 24px;
+      width: 24px;
+      background-color: rgb(116, 71, 211);
+      outline: 1px solid rgb(215, 215, 196);
+      border-radius: 50%;
+      border: 7px solid rgb(222, 222, 212);
+      /*  slider progress trick  */
+    }
+  }
+}
+.logic-house-area {
+  max-width: 224px;
+  width: 100%;
+  padding-top: 47px;
+  padding-inline: 76px;
+  font-size: 40px;
+  font-family: var(--secondFamily);
+  color: #5a6372;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(215, 215, 196);
+  border-radius: 16px;
+  flex-wrap: wrap;
+  :nth-child(2) {
+    font-size: 16px;
+  }
+}
+.logic-line-decor {
+  width: 100%;
+  height: 1px;
+  background-color: #deded4;
+  margin-bottom: 54px;
+}
+.logic-inner-paynemt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #5a6372;
+  margin-bottom: 54px;
+  @media (max-width: 768px) {
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .advance-paynemt {
+    font-weight: 300;
+    font-size: 19px;
+  }
+  .paynemt-fullprice {
+    font-family: var(--secondFamily);
+    font-size: 32px;
+  }
+  a {
+    white-space: nowrap;
+    padding: 16px 32px;
+    font-family: "Museo", sans-serif;
+    color: #ffffff;
+    border: none;
+    background-color: #8f5bd7;
+    border-radius: 56px;
+    font-weight: 300;
+    font-size: 18px;
+    border: 2px solid #8f5bd7;
+    cursor: pointer;
+    transition: all 0.2s;
+    @media (min-width: 768px) {
+      &:hover {
+        background-color: #fff;
+        color: #8f5bd7;
+        border: 2px solid #8f5bd7;
+      }
+    }
+  }
+}
+.logic-footer {
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+}

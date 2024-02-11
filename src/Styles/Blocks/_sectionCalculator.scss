@@ -1,0 +1,22 @@
+.sectionCalc {
+  position: relative;
+  background-color: #f5f5ea;
+}
+
+.calc-title {
+  color: #434a56;
+}
+.calc-subtitle {
+  color: #1e2126;
+  p {
+    color: #1e2126;
+  }
+}
+.cacl-line {
+  background-color: rgb(215, 215, 196);
+}
+.calc-bg-image {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

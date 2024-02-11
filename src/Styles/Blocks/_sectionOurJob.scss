@@ -1,0 +1,148 @@
+.containerJob {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.box-job-image {
+  position: absolute;
+  top: 120px;
+  right: 70px;
+  @media (max-width: 768px) {
+    right: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.sectionJob {
+  position: relative;
+  background-color: #1e2126;
+}
+.innerJob {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+.innerJob-Title {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg) translate(11px, 0);
+}
+
+.line1 {
+  width: 129px;
+  height: 1.5px;
+  background-color: #2d3239;
+}
+.line2 {
+  width: 100%;
+  height: 1.5px;
+  background-color: #2d3239;
+}
+.job-title {
+  font-size: 16px;
+  font-weight: 300;
+  white-space: nowrap;
+  letter-spacing: 1.1px;
+  color: #434a56;
+  margin-right: 26px;
+  padding-bottom: 2px;
+}
+.circleTitle {
+  margin-left: 20px;
+}
+
+.innerJob-subTitle {
+  padding-top: 114px;
+  padding-left: 60px;
+  max-width: 425px;
+  @media (max-width: 768px) {
+    padding-top: 40px;
+  }
+}
+.job-subTitle {
+  font-family: var(--secondFamily);
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 12px;
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+.title-text-job {
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+.jobItems-inner {
+  position: relative;
+  z-index: 100;
+  max-width: 960px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 12px;
+  margin-bottom: 144px;
+  @media (max-width: 960px) {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+.jobitem {
+  font-family: var(--secondFamily);
+  font-size: 14px;
+  color: #ffffff;
+}
+.jobitem-infoBlock {
+  position: relative;
+  z-index: -100;
+  translate: 0 -22px;
+  max-width: 304px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 43px;
+  background-color: #16191d;
+  border: 1px solid #1e2126;
+  border-radius: 0 0 24px 24px;
+
+  padding: 13px 24px;
+  padding-top: 40px;
+}
+.infoBlock-rooms,
+.infoBlock-square,
+.infoBlock-floors,
+.infoBlock-bathrooms {
+  display: flex;
+  align-items: center;
+}
+.infoBlock-image {
+  margin-right: 12px;
+}
+.decorInner {
+  position: absolute;
+  translate: 0 -240px;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    translate: 0 -50px;
+  }
+}

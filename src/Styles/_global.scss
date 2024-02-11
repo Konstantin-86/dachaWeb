@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Museo", sans-serif;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  --mainFamily: "Museo", sans-serif;
+  --secondFamily: "Neumann", sans-serif;
+  --mainColor: #fff;
+  --secondColor: #7447d3;
+  --bgColor: #1e2126;
+}
+.container {
+  max-width: 1450px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+.myButton {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 56px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #1e2126;
+  font-weight: 300;
+  font-size: 18px;
+  transition: all 0.2s;
+  margin-bottom: 73px;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    :hover {
+      border: 1px solid #ab84e1;
+      color: #ab84e1;
+    }
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}

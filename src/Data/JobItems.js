@@ -1,7 +1,7 @@
 export const jobItems = [
   {
     name: "",
-    image: "src/assets/Images/job/item1.png",
+    image: "/assets/Images/job/item1.png",
     square: 240,
     rooms: 6,
     floors: 2,
@@ -9,7 +9,7 @@ export const jobItems = [
   },
   {
     name: "",
-    image: "src/assets/Images/job/item2.png",
+    image: "/assets/Images/job/item2.png",
     square: 260,
     rooms: 8,
     floors: 2,
@@ -17,7 +17,7 @@ export const jobItems = [
   },
   {
     name: "",
-    image: "src/assets/Images/job/item3.png",
+    image: "/assets/Images/job/item3.png",
     square: 200,
     rooms: 5,
     floors: 2,
@@ -25,7 +25,7 @@ export const jobItems = [
   },
   {
     name: "",
-    image: "src/assets/Images/job/item4.png",
+    image: "/assets/Images/job/item4.png",
     square: 250,
     rooms: 7,
     floors: 2,
@@ -33,7 +33,7 @@ export const jobItems = [
   },
   {
     name: "",
-    image: "src/assets/Images/job/item5.png",
+    image: "/assets/Images/job/item5.png",
     square: 300,
     rooms: 8,
     floors: 2,
@@ -41,7 +41,7 @@ export const jobItems = [
   },
   {
     name: "",
-    image: "src/assets/Images/job/item6.png",
+    image: "/assets/Images/job/item6.png",
     square: 310,
     rooms: 9,
     floors: 2,
